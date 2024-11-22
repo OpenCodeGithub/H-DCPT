@@ -5,8 +5,8 @@ from lib.test.evaluation.data import Sequence, BaseDataset, SequenceList
 from lib.test.utils.load_text import load_text
 
 
-class OTBDataset(BaseDataset):
-    """ OTB-2015 dataset
+class LLOTDataset(BaseDataset):
+    """ LLOT-2015 dataset
     Publication:
         Object Tracking Benchmark
         Wu, Yi, Jongwoo Lim, and Ming-hsuan Yan
@@ -16,7 +16,7 @@ class OTBDataset(BaseDataset):
     """
     def __init__(self):
         super().__init__()
-        self.base_path = self.env_settings.otb_path
+        self.base_path = self.env_settings.llot_path
         self.sequence_info_list = self._get_sequence_info_list()
 
     def get_sequence_list(self):
@@ -41,16 +41,14 @@ class OTBDataset(BaseDataset):
         # NOTE: OTB has some weird annos which panda cannot handle
         ground_truth_rect = load_text(str(anno_path), delimiter=(',', None), dtype=np.float64, backend='numpy')
 
-        return Sequence(sequence_info['name'], frames, 'otb', ground_truth_rect[init_omit:,:],
+        return Sequence(sequence_info['name'], frames, 'llot', ground_truth_rect[init_omit:,:],
                         object_class=sequence_info['object_class'])
 
     def __len__(self):
         return len(self.sequence_info_list)
 
     def _get_sequence_info_list(self):
-
         sequence_info_list = []
-        print(self.base_path)
         object_list = os.listdir(self.base_path)
         for object_file in object_list:
             img_path = os.path.join(os.path.join(self.base_path,object_file),"img")

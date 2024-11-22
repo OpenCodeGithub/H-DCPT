@@ -16,7 +16,8 @@ def local_env_settings():
     settings.lasot_path = '/media/lsw/data4/LaSOT/zip'
     settings.network_path = '/home/lsw/PycharmProjects/HIPTrack_Re/H-DCPT/output/test/networks'    # Where tracking networks are stored.
     settings.nfs_path = '/home/lsw/PycharmProjects/HIPTrack_Re/H-DCPT/data/nfs'
-    settings.otb_path = '/media/lsw/data/LLOT/LLOT'
+    settings.otb_path = '/media/lsw/data/OTB'
+    settings.llot_path = '/media/lsw/data/LLOT'
     settings.prj_dir = '/home/lsw/PycharmProjects/HIPTrack_Re/H-DCPT'
     settings.result_plot_path = '/home/lsw/PycharmProjects/HIPTrack_Re/H-DCPT/output/test/result_plots'
     settings.results_path = '/home/lsw/PycharmProjects/HIPTrack_Re/H-DCPT/output/test/tracking_results'    # Where to store tracking results

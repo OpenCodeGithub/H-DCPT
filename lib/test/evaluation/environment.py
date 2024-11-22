@@ -11,6 +11,7 @@ class EnvSettings:
         self.network_path = '{}/networks/'.format(test_path)
         self.result_plot_path = '{}/result_plots/'.format(test_path)
         self.otb_path = ''
+        self.llot_path = ''
         self.nfs_path = ''
         self.uav_path = ''
         self.tpl_path = ''
@@ -61,6 +62,7 @@ class EnvSettings_ITP:
         self.network_path = os.path.join(save_dir, 'test/networks')
         self.result_plot_path = os.path.join(save_dir, 'test/result_plots')
         self.otb_path = os.path.join(data_dir, 'otb')
+        self.llot_path = os.path.join(data_dir, 'llot')
         self.nfs_path = os.path.join(data_dir, 'nfs')
         self.uav_path = os.path.join(data_dir, 'uav')
         self.tc128_path = os.path.join(data_dir, 'TC128')
