@@ -55,7 +55,7 @@ lib/test/evaluation/local.py  # paths about testing
 
 Change the dataset path in `lib/test/evaluation/local.py` to your storage path.
 
-- LaSOT or other off-line evaluated benchmarks (modify `--dataset` correspondingly)
+- LaSOT/LLOT or other off-line evaluated benchmarks (modify `--dataset` correspondingly)
 
 ```bash
 python3 tracking/test.py hiptrack hiptrack --dataset lasot --threads 1 --num_gpus 1
