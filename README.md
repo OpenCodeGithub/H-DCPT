@@ -35,7 +35,7 @@ lib/test/evaluation/local.py  # paths about testing
 
 - For training on datasets except GOT-10k.
 
-  Download pre-trained [DropTrack weights](https:) and put it under `$PROJECT_ROOT$/pretrained_models`.
+  Download pre-trained [DropTrack/DCPT weights](https:) and put it under `$PROJECT_ROOT$/pretrained_models`.
 
   ```bash
   python3 tracking/train.py --script hiptrack --config hiptrack --save_dir ./output --mode multiple --nproc_per_node 4
@@ -43,7 +43,7 @@ lib/test/evaluation/local.py  # paths about testing
 
 - For training on GOT-10k.
 
-  Download pre-trained [DropTrack weights](https:) and put it under `$PROJECT_ROOT$/pretrained_models`.
+  Download pre-trained [DropTrack/DCPT weights](https:) and put it under `$PROJECT_ROOT$/pretrained_models`.
 
   ```bash
   python3 tracking/train.py --script hiptrack --config hiptrack_got --save_dir ./output --mode multiple --nproc_per_node 4
