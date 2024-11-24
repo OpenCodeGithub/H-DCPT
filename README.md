@@ -2,7 +2,7 @@
 
 ## Overview
 
-[Paper](https://arxiv.org/abs/2408.11463) | [LLOT benchmark](https://pan.baidu.com/s/1NvLQYoDFZgvMA0Jnq6YUkA?pwd=exyr)
+[Paper](https://arxiv.org/abs/2408.11463) | [LLOT benchmark](https://pan.baidu.com/s/1CQprKcCDTRoEE9xs1690sg?pwd=fbkd)
 
 ### Install the environment
 
