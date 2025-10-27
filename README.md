@@ -2,7 +2,7 @@
 
 ## Overview
 
-[Paper](https://arxiv.org/abs/2408.11463) | [LLOT benchmark](https://pan.baidu.com/s/1CQprKcCDTRoEE9xs1690sg?pwd=fbkd)
+[Paper](https://arxiv.org/abs/2408.11463) | [LLOT benchmark](https://pan.baidu.com/s/1CQprKcCDTRoEE9xs1690sg?pwd=fbkd)|[Checkpoints](https://pan.baidu.com/s/1IrDzrDt5Zt_L15Ll1lEG1Q?pwd=y3pk)
 
 ### Install the environment
 
@@ -78,18 +78,19 @@ python3 lib/test/utils/transform_trackingnet.py --tracker_name hiptrack --cfg_na
 
 
 
-
+The current repository contains an experimental version of the code, which is directly developed based on the HIPTrack framework.Some classes, functions, and file paths still retain the original HIPTrack naming and have not yet been uniformly updated to our algorithm’s name, H-DCPT. A fully organized and renamed version of the code will be released later.
 
 
 
 ## Citing H-DCPT
 
 ```
-@article{zhong2024low,
-  title={Low-Light Object Tracking: A Benchmark},
+@article{zhong2025low,
+  title={Low-light object tracking: A benchmark},
   author={Zhong, Pengzhi and Guo, Xiaoyu and Huang, Defeng and Peng, Xiaojun and Li, Yian and Zhao, Qijun and Li, Shuiwang},
-  journal={arXiv preprint arXiv:2408.11463},
-  year={2024}
+  journal={IEEE Transactions on Intelligent Vehicles},
+  year={2025},
+  publisher={IEEE}
 }
 ```
 
