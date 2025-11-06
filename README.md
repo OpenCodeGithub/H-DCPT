@@ -2,7 +2,7 @@
 
 ## Overview
 
-[Paper](https://arxiv.org/abs/2408.11463) | [LLOT benchmark](https://pan.baidu.com/s/1CQprKcCDTRoEE9xs1690sg?pwd=fbkd)|[Checkpoints](https://pan.baidu.com/s/1IrDzrDt5Zt_L15Ll1lEG1Q?pwd=y3pk)
+[Paper](https://arxiv.org/abs/2408.11463) |[Checkpoints](https://pan.baidu.com/s/1IrDzrDt5Zt_L15Ll1lEG1Q?pwd=y3pk)| [LLOT benchmark（baidu）](https://pan.baidu.com/s/1CQprKcCDTRoEE9xs1690sg?pwd=fbkd)| [LLOT benchmark（google）](https://drive.google.com/drive/folders/1zvM7th-2q3NLXSFiLIM1cxVE-ogX1qeC?usp=drive_link,https://drive.google.com/drive/folders/12UZDYVIq-9bCdPMpB6YE49Z3kD52n4li?usp=drive_link)
 
 ### Install the environment
 
