@@ -8,8 +8,8 @@ from ...utils.ce_utils import generate_mask_cond, adjust_keep_rate
 import numpy as np
 import cv2
 
-class HIPTrackActor(BaseActor):
-    """ Actor for training HIPTrack models """
+class HDCPTActor(BaseActor):
+    """ Actor for training HDCPT models """
 
     def __init__(self, net, objective, loss_weight, settings, cfg=None, multiFrame=False):
         super().__init__(net, objective)

@@ -11,9 +11,9 @@ from torch.nn.parallel import DistributedDataParallel as DDP
 # some more advanced functions
 from .base_functions import *
 # network related
-from lib.models.hiptrack import build_hiptrack
+from lib.models.hdcpt.hdcpt import build_hdcpt
 # forward propagation related
-from lib.train.actors import HIPTrackActor
+from lib.train.actors import HDCPTActor
 # for import modules
 import importlib
 
@@ -53,8 +53,8 @@ def run(settings):
         cfg.ckpt_dir = settings.save_dir
 
     # Create network
-    if settings.script_name == "hiptrack":
-        net = build_hiptrack(cfg)
+    if settings.script_name == "hdcpt":
+        net = build_hdcpt(cfg)
     else:
         raise ValueError("illegal script name")
 
@@ -75,12 +75,12 @@ def run(settings):
     settings.distill = getattr(cfg.TRAIN, "DISTILL", False)
     settings.distill_loss_type = getattr(cfg.TRAIN, "DISTILL_LOSS_TYPE", "KL")
     # Loss functions and Actors
-    if settings.script_name == "hiptrack":
+    if settings.script_name == "hdcpt":
         focal_loss = FocalLoss()
         #contrast_loss = ContrastLoss()
         objective = {'giou': giou_loss, 'l1': l1_loss, 'focal': focal_loss, 'cls': BCEWithLogitsLoss()}
         loss_weight = {'giou': cfg.TRAIN.GIOU_WEIGHT, 'l1': cfg.TRAIN.L1_WEIGHT, 'focal': 1., 'cls': 1.0}
-        actor = HIPTrackActor(net=net, objective=objective, loss_weight=loss_weight, settings=settings, cfg=cfg, multiFrame=False)
+        actor = HDCPTActor(net=net, objective=objective, loss_weight=loss_weight, settings=settings, cfg=cfg, multiFrame=False)
     else:
         raise ValueError("illegal script name")
 

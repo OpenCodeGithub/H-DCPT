@@ -1,7 +1,7 @@
 from lib.test.utils import TrackerParams
 import os
 from lib.test.evaluation.environment import env_settings
-from lib.config.hiptrack.config import cfg, update_config_from_file
+from lib.config.hdcpt.config import cfg, update_config_from_file
 
 
 def parameters(yaml_name: str):
@@ -11,7 +11,7 @@ def parameters(yaml_name: str):
     prj_dir = env_settings().prj_dir
     save_dir = env_settings().save_dir
     # update default config from yaml file
-    yaml_file = os.path.join(prj_dir, 'experiments/hiptrack/%s.yaml' % yaml_name)
+    yaml_file = os.path.join(prj_dir, 'experiments/hdcpt/%s.yaml' % yaml_name)
     update_config_from_file(yaml_file)
     params.cfg = cfg
     print("test config: ", cfg)
@@ -23,7 +23,7 @@ def parameters(yaml_name: str):
     params.search_size = cfg.TEST.SEARCH_SIZE
 
     # Network checkpoint path
-    params.checkpoint = os.path.join(save_dir, "checkpoints1/train/hiptrack/%s/HIPTrack_ep%04d.pth.tar" %
+    params.checkpoint = os.path.join(save_dir, "checkpoints1/train/hdcpt/%s/HDCPT_ep%04d.pth.tar" %
                                      (yaml_name, cfg.TEST.EPOCH))
 
     # whether to save boxes from all queries

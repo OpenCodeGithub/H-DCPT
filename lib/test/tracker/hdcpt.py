@@ -239,4 +239,4 @@ class HIPTrack(BaseTracker):
 
 
 def get_tracker_class():
-    return HIPTrack
+    return HDCPT

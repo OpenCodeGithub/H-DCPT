@@ -1,4 +1,4 @@
-name: HIPTrack1
+name: H-DCPT
 channels:
   - pytorch
   - conda-forge
